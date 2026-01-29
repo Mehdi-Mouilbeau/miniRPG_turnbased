@@ -10,6 +10,7 @@ public class ChargedSkill : Skill
         ManaCost = 25;
         Cooldown = 5;
         TargetType = TargetType.Enemy;
+        Category = SkillCategory.Offensive;
     }
 
     protected override void OnUse(Character caster, Character target)

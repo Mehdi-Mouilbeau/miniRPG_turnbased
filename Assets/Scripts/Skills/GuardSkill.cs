@@ -11,8 +11,9 @@ public class GuardSkill : Skill
         ManaCost = 10;
         Cooldown = 4;
         TargetType = TargetType.Self;
-        defenseIncrease = 5; 
-        durationTurns = 3; 
+        defenseIncrease = 10; 
+        durationTurns = 3;
+        Category = SkillCategory.Defensive;
     }
 
     protected override void OnUse(Character caster, Character target)

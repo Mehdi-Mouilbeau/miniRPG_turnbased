@@ -762,14 +762,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0d5e398fa3c014aa1bd43ee6b0b021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleManager
-  playerVisual: {fileID: 1431682658}
-  enemyVisual: {fileID: 2009634695}
-  playerHP: {fileID: 2142453222}
-  playerMana: {fileID: 1372027812}
-  enemyHP: {fileID: 135802628}
-  enemyMana: {fileID: 1016138849}
-  frozenIcon: {fileID: 923337948}
+  battleUI: {fileID: 1507652731}
   battleLogText: {fileID: 1309613140}
+  turnDelay: 0.5
 --- !u!4 &730819897
 Transform:
   m_ObjectHideFlags: 0
@@ -1743,6 +1738,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1507652729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1507652730}
+  - component: {fileID: 1507652731}
+  m_Layer: 0
+  m_Name: BattleUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1507652730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507652729}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1507652731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507652729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b72caf7ba20fe447b6f8b55e509e0cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleUI
+  playerVisual: {fileID: 1431682658}
+  enemyVisual: {fileID: 2009634695}
+  playerHP: {fileID: 2142453222}
+  playerMana: {fileID: 1372027812}
+  enemyHP: {fileID: 135802628}
+  enemyMana: {fileID: 1016138849}
+  frozenIcon: {fileID: 923337948}
 --- !u!1 &1561142590
 GameObject:
   m_ObjectHideFlags: 0
@@ -2431,6 +2477,7 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 730819897}
+  - {fileID: 1507652730}
   - {fileID: 1341775806}
   - {fileID: 1762883495}
   - {fileID: 2009634695}

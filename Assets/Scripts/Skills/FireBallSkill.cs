@@ -7,10 +7,11 @@ public class FireBallSkill : Skill
     public FireBallSkill()
     {
         Name = "Fire Ball";
-        damage = 40;
+        damage = 20;
         ManaCost = 20;
         Cooldown = 2;
         TargetType = TargetType.Enemy;
+        Category = SkillCategory.Offensive;
     }
 
     protected override void OnUse(Character caster, Character target)

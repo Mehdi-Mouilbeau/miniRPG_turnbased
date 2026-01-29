@@ -14,9 +14,8 @@ public abstract class Skill
     public int Cooldown { get; protected set; }
     public int CurrentCooldown { get; private set; }
     public TargetType TargetType { get; protected set; }
+    public SkillCategory Category { get; set; }
 
-    // Effect could be a delegate or a method reference, depending on implementation
-    // public abstract void Use(GameObject user, GameObject target);
 
     // Spell on cd 
     public bool IsOnCooldown()

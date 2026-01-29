@@ -9,6 +9,7 @@ public class HealSkill : Skill
         ManaCost = 25;
         Cooldown = 3;
         TargetType = TargetType.Ally | TargetType.Self;
+        Category = SkillCategory.Healing;
     }
 
     protected override void OnUse(Character caster, Character target)
